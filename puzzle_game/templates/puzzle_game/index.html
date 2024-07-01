@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ITE_BAI501_F23_HW</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'puzzle_game/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>ITE_BAI501_F23_HW</h1>
+        <div class="grid-container">
+            <div>
+                <h2>Initial State</h2>
+                <table id="initial-state" class="grid baby-purple">
+                    <!-- 3x3 Table with input fields for initial state -->
+                </table>
+            </div>
+            <div>
+                <h2>End State</h2>
+                <table id="end-state" class="grid baby-purple">
+                    <!-- 3x3 Table with input fields for end state -->
+                </table>
+            </div>
+        </div>
+        <button id="start-solving">Start Solving</button>
+        <button id="play-again" style="display:none;">Play Again</button>
+        <h2>Solution Steps</h2>
+        <div id="steps-container">
+            <!-- Steps will be displayed here -->
+        </div>
+        <div class="names-table-container">
+            <table class="names-table">
+                <tr>
+                    <td>Yaman_167323</td>
+                    <td>C1</td>
+                    <td>يمان ماقو</td>
+                </tr>
+                <tr>
+                    <td>Raneem_164708</td>
+                    <td>C2</td>
+                    <td>رنيم كعدان</td>
+                </tr>
+                <tr>
+                    <td>Mohammad_203505</td>
+                    <td>C2</td>
+                    <td>محمد القاضي</td>
+                </tr>
+                <tr>
+                    <td>Mhd_ghaeth_190230</td>
+                    <td>C1</td>
+                    <td>محمد غيث الشامي</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <button id="scroll-to-top" style="display:none;">Scroll to Top</button>
+    <script src="{% static 'puzzle_game/main.js' %}"></script>
+</body>
+</html>
